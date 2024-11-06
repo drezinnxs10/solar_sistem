@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+.solar-system {
+    position: relative;
+    width: 600px;
+    height: 600px;
+}
+
+/* Sol no centro */
+.sun {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 40px rgba(255, 255, 0, 0.6);
+}
+
+/* Contêiner de órbita (ao redor do Sol) */
+.orbit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: center;
+    animation: rotateOrbit linear infinite;
+}
+
+/* Animação para a rotação das órbitas (gira ao redor do Sol) */
+@keyframes rotateOrbit {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Estilo dos planetas */
+.planet {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    transform: translateX(-50%); /* Garante que o planeta esteja na borda */
+}
+
+/* Tamanhos e cores dos planetas */
+#mercury {
+    background-color: gray;
+    width: 15px;
+    height: 15px;
+}
+
+#venus {
+    background-color: #ffcc66;
+    width: 25px;
+    height: 25px;
+}
+
+#earth {
+    background-color: blue;
+    width: 30px;
+    height: 30px;
+}
+
+#mars {
+    background-color: red;
+    width: 35px;
+    height: 35px;
+}
+
+#jupiter {
+    background-color: #f1c27d;
+    width: 60px;
+    height: 60px;
+}
+
+#saturn {
+    background-color: #ffcc99;
+    width: 70px;
+    height: 70px;
+}
+
+#uranus {
+    background-color: #66ccff;
+    width: 50px;
+    height: 50px;
+}
+
+#neptune {
+    background-color: #3399cc;
+    width: 50px;
+    height: 50px;
+}
+
+/* Tamanhos das órbitas */
+.orbit1 {
+    width: 120px;
+    height: 120px;
+    animation-duration: 5s;
+}
+
+.orbit2 {
+    width: 160px;
+    height: 160px;
+    animation-duration: 8s;
+}
+
+.orbit3 {
+    width: 200px;
+    height: 200px;
+    animation-duration: 10s;
+}
+
+.orbit4 {
+    width: 240px;
+    height: 240px;
+    animation-duration: 12s;
+}
+
+.orbit5 {
+    width: 300px;
+    height: 300px;
+    animation-duration: 15s;
+}
+
+.orbit6 {
+    width: 350px;
+    height: 350px;
+    animation-duration: 18s;
+}
+
+.orbit7 {
+    width: 400px;
+    height: 400px;
+    animation-duration: 22s;
+}
+
+.orbit8 {
+    width: 450px;
+    height: 450px;
+    animation-duration: 25s;
+}
